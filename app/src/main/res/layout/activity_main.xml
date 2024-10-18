@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <androidx.media3.ui.PlayerView
+        app:show_vr_button="true"
+        android:keepScreenOn="true"
+        android:id="@+id/player_view"
+        app:animation_enabled="true"
+        android:animateLayoutChanges="true"
+        android:animationCache="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:controller_layout_id="@layout/player_controller" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
